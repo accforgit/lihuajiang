@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "lint-md .",
-    "lint:fix": "lint-md . --fix"
+    "lint:fix": "lint-md --fix ."
   },
   "husky": {
     "hooks": {
@@ -15,7 +15,7 @@
   },
   "lint-staged": {
     "*.{md,markdown}": [
-      "lint-md"
+      "lint-md --fix"
     ]
   },
   "keywords": [],
